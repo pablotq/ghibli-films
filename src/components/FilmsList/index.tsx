@@ -18,7 +18,7 @@ export const FilmsList = () => {
             {data?.map((film) => (
                 <>
                     <div className="m-3">
-                        <Link to={`/films/${film.id}`}>
+                        <Link to={`/ghibli-films/films/${film.id}`}>
                             <img className="" src={film.image} alt="" />
                             <h2 className="text-center font-medium text-3xl">{film.title}</h2>
                         </Link>

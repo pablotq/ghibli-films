@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom"
+import banner from "/images/banner.png";
 
 export const Header = () => {
     return (
@@ -7,8 +8,8 @@ export const Header = () => {
                 <div className="w-full h-full backdrop-blur-md">
                 </div>
             </div>
-            <Link to="/">
-                <img src="/images/banner.png" alt="Ghibli Films"
+            <Link to="/ghibli-films">
+                <img src={banner} alt="Ghibli Films"
                     className="relative z-10 w-full max-h-78 object-contain" />
             </Link>
         </header>
