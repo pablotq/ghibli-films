@@ -9,7 +9,7 @@ export const Header = () => {
             </div>
             <Link to="/">
                 <img src="/images/banner.png" alt="Ghibli Films"
-                    className="relative z-10 w-full max-h-75 object-contain" />
+                    className="relative z-10 w-full max-h-78 object-contain" />
             </Link>
         </header>
     )
