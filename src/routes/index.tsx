@@ -7,9 +7,9 @@ import { Films } from "../pages/Films";
 export const Router = () => {
     return(
         <Routes>
-            <Route path="pablotq.github.io/ghibli-films" element={<Layout/>}>
+            <Route path="/ghibli-films" element={<Layout/>}>
                 <Route index element={<Home/>}/>
-                <Route path="pablotq.github.io/ghibli-films/films/:id" element={<Films/>}/>
+                <Route path="/ghibli-films/films/:id" element={<Films/>}/>
             </Route>
         </Routes>
     )
