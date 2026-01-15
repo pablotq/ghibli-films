@@ -44,7 +44,7 @@ npm run dev
 npm run build
 
 # Visualize a build localmente
-```npm run preview
+npm run preview
 
 
 
