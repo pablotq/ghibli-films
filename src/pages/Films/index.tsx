@@ -24,7 +24,7 @@ export const Films = () => {
                 <div className="flex flex-col gap-6">
                     <div className="flex justify-center">
                         <img 
-                            className="max-w-md w-full rounded-lg shadow-lg object-cover" 
+                            className=" w-full rounded-lg shadow-lg object-cover" 
                             src={data?.movie_banner} 
                             alt={data?.title} 
                         />
