@@ -1,73 +1,73 @@
-# React + TypeScript + Vite
+# 🎬 Ghibli Films
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Uma aplicação web moderna para explorar filmes do Studio Ghibli com uma interface elegante e responsiva. Visualize informações detalhadas sobre cada filme, incluindo sinopse, diretor, produtor, ano de lançamento e avaliação.
 
-Currently, two official plugins are available:
+## 📋 Sobre o Projeto
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Este projeto é um catálogo interativo dos filmes do Studio Ghibli, desenvolvido como uma experiência de aprendizado com as tecnologias modernas do ecossistema React. A aplicação consome dados de uma API externa e apresenta os filmes em cards elegantes com detalhes individualizados.
 
-## React Compiler
+## 🚀 Tecnologias Utilizadas
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- **[React 18](https://react.dev/)** - Biblioteca JavaScript para construção de interfaces de usuário
+- **[TypeScript](https://www.typescriptlang.org/)** - Superconjunto tipado do JavaScript para maior segurança
+- **[Vite](https://vite.dev/)** - Bundler ultra-rápido para desenvolvimento e build
+- **[React Router](https://reactrouter.com/)** - Roteamento SPA para navegação entre páginas
+- **[Tailwind CSS](https://tailwindcss.com/)** - Framework CSS utilitário para estilização
+- **[ESLint](https://eslint.org/)** - Ferramenta de análise estática para código JavaScript/TypeScript
 
-## Expanding the ESLint configuration
+## 📦 Instalação
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+```bash
+# Clone o repositório
+git clone https://github.com/seu-usuario/ghibli-films.git
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+# Entre no diretório
+cd ghibli-films
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
-
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+# Instale as dependências
+npm install
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+## 🏃 Como Executar
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+```bash
+# Inicie o servidor de desenvolvimento
+npm run dev
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+# O projeto será aberto em http://localhost:5173
 ```
+
+## 🔨 Build para Produção
+
+```bash
+# Gere a build otimizada para produção
+npm run build
+
+# Visualize a build localmente
+```npm run preview
+
+
+
+## 💻 Funcionalidades
+
+✨ **Listagem de Filmes** - Visualize todos os filmes do Studio Ghibli em um grid responsivo com cards elegantes
+
+📄 **Detalhes do Filme** - Clique em um filme para ver informações completas:
+- Título e Banner
+- Descrição detalhada
+- Diretor
+- Produtor
+- Ano de lançamento
+- Avaliação (com destaque visual para notas acima de 90)
+
+📱 **Design Responsivo** - Interface perfeita em dispositivos móveis, tablets e desktop
+
+🎨 **UI Moderna** - Utiliza Tailwind CSS para uma experiência visual refinada com:
+- Cards com efeito hover
+- Animações suaves
+- Paleta de cores consistente
+- Transições elegantes
+
+## 🌐 API Utilizada
+
+Os dados dos filmes são obtidos da [Studio Ghibli API](https://ghibliapi.github.io/), uma API pública e gratuita que fornece informações sobre os filmes do estúdio.
