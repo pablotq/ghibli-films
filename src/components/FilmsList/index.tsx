@@ -26,7 +26,7 @@ export const FilmsList = () => {
                 {data?.map((film) => (
                     <Link 
                         key={film.id}
-                        to={`/ghibli-films/films/${film.id}`}
+                        to={`/films/${film.id}`}
                         className="group block h-full no-underline"
                     >
                         <div className="bg-white rounded-lg shadow-md hover:shadow-xl overflow-hidden transition-all duration-300 transform hover:-translate-y-1 h-full flex flex-col">

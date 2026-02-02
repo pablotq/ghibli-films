@@ -8,7 +8,7 @@ export const Header = () => {
                 <div className="w-full h-full backdrop-blur-md">
                 </div>
             </div>
-            <Link to="/ghibli-films">
+            <Link to="/">
                 <img src={banner} alt="Ghibli Films"
                     className="relative z-10 w-full max-h-78 object-contain" />
             </Link>

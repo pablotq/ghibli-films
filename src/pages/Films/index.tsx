@@ -1,11 +1,11 @@
 import { Link, useParams } from "react-router-dom";
-import { getFilm } from "../../hooks/useFilms";
+import { useFilm } from "../../hooks/useFilms";
 
 
 export const Films = () => {
     const { id } = useParams<{ id: string }>();
 
-    const { data, isLoading, error } = getFilm(id || "");
+    const { data, isLoading, error } = useFilm(id || "");
 
     if (isLoading) return <p>Carregando...</p>
 
@@ -16,7 +16,7 @@ export const Films = () => {
             <main className="max-w-4xl mx-auto px-4 md:px-8 py-6">
                 <Link 
                     className="inline-block px-4 py-2 mb-6 bg-gray-200 hover:bg-gray-300 rounded-lg transition-colors duration-200 font-semibold text-gray-800" 
-                    to="/ghibli-films/"
+                    to="/"
                 >
                     ⊲ Voltar
                 </Link>

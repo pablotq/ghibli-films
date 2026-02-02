@@ -27,7 +27,7 @@ export function useFilms(limit: number) {
     });
 }
 
-export function getFilm(id: string) {
+export function useFilm(id: string) {
     return useQuery<Film>({
         queryKey: ["films", id],
         queryFn: () => fetchFilm(id),
